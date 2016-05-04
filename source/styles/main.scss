@@ -1,0 +1,86 @@
+$primary-color-dark:   #00796B;
+$primary-color:        #009688;
+$primary-color-light:  #B2DFDB;
+$primary-color-text:   mistyrose;//#FFFFFF;
+$accent-color:         #FF9800;
+$primary-text-color:   #212121;
+$secondary-text-color: #727272;
+$divider-color:        #B6B6B6;
+
+body {
+  margin: 0;
+  webkit-font-smoothing: antialiased;
+  color: $secondary-text-color;
+}
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+.app-wrap {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; 
+}
+.app-header {
+  padding: 10px;
+  //color: $primary-color-text;
+  background-color: $primary-color;
+  height: 80px;
+  border-bottom: 2px solid #fff59d;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+     font-size: 11px;
+     color: $primary-color-text;
+   }
+   .button {
+     background: rgba(0, 0, 0, 0.1);
+     padding: 10px 15px;
+     border-radius: 4px;
+   }
+
+  }
+ }
+
+ .app-header > * {
+    
+    color: $primary-color-text;
+
+
+    //justify-content: space-round;
+ }
+.content {
+  padding: 16px;
+  background-color: #fafafa;
+  line-height: 1.8;
+  overflow-y: scroll;
+  flex-grow: 1;
+}
+.app-footer{
+  background-color: $primary-color;
+  height: 80px;
+  border-top:2px solid #e6e6e6;
+  flex-shrink: 0;
+  display: flex;
+  a {
+    padding: 15px;
+    text-align: center;
+    color: rgba(0,0,0,0.5);
+    border-left: 2px solid rgba(0,0,0,0.1);
+    flex-grow: 1;
+    &:first-child {
+      border-left: 0;
+    }
+  }
+  i {
+    display: block ;
+    font-size: 25px;
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+  }
+}
