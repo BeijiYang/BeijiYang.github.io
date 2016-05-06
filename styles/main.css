@@ -43,13 +43,11 @@ a {
           justify-content: space-between; }
   .app-header a {
     font-size: 11px;
-    padding: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.1); }
-
-.app-header > * {
-  color: mistyrose; }
+    color: mistyrose; }
+  .app-header .button {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    border-radius: 4px; }
 
 .content {
   padding: 16px;
@@ -78,9 +76,9 @@ a {
     color: rgba(0, 0, 0, 0.5);
     border-left: 2px solid rgba(0, 0, 0, 0.1);
     -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1; }
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
     .app-footer a:first-child {
       border-left: 0; }
   .app-footer i {
