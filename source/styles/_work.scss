@@ -1,0 +1,44 @@
+.work {
+  margin: 0;
+  padding: 16px;
+  .card {
+    margin: 20px 0;
+    padding:10px;
+    width: 100%;
+    box-shadow: 0px 1px 6px rgba(0,0,0,0.25);
+    background-color: white;
+    transition: all 450ms ease;
+    text-align: center;
+    img {
+      max-width: 100%;
+      margin: 0 atuo;
+      border: 1px solid #eee;
+    }
+    .text {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      word-break: break-word;
+    }
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 1px 12px rgba(0,0,0,0.25);
+    }
+  }
+}
+@media (min-width:600px) {
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+      margin: 16px;
+      width: calc(50% - 32px);
+    }
+  }
+}
+@media (min-width:1200px) {
+  .work {
+    .card {
+      width: calc(33.3333% - 32px);
+    }
+  }
+}

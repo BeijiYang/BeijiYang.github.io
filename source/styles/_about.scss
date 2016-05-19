@@ -1,0 +1,42 @@
+.about {
+  margin-bottom: 30px;
+  font-size: 15px;
+  .background {
+    background: url('../images/trainWindow.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 260px;
+    margin-bottom: 10px;
+   }
+  img {
+    margin: 0 auto;
+    margin-top: -60px;
+    display: block;
+    //width: 25%;
+    //height:25%;
+    width: 100px; //固定的数值，使得头像的中线在缩放时，保持在上面背景的下边缘处不动。
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  h2 {
+    color: $primary-color-dark;  
+  }
+  .touch {
+    display: flex;
+    list-style: none;
+    margin: 20px auto;
+    justify-content: space-around;
+    padding-left: 0;
+    i {
+      font-size: 36px;
+      color:$accent-color;
+      margin: 0 10px 0 0 ;
+
+
+    }
+
+
+  }
+  }
