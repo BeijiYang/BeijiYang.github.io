@@ -21,7 +21,13 @@
     border: 2px solid white;
   }
   h2 {
-    color: $primary-color-dark;  
+    margin-left: 5%;
+    padding-left: 5%;
+    color: $primary-color;  
+    border-left: 10px solid $primary-color-dark; 
+  }
+  .who {
+    margin-left: 5%;
   }
   .touch {
     display: flex;
@@ -33,10 +39,29 @@
       font-size: 36px;
       color:$accent-color;
       margin: 0 10px 0 0 ;
-
-
     }
-
-
   }
+ }
+ @media (min-width:800px) {
+  .about {
+    text-align: center;
+    font-size: 17px;
+    .who {
+      margin-left: 0;
+    }
+    h2 {
+      margin: 20px auto;
+      padding:0;
+      width: 200px;
+      border-left:none;
+      border-bottom:3px solid $primary-color-dark; 
+    }
+    .touch {
+      margin-top: 30px;
+      width: 200px;
+      display: flex;
+      justify-content:flex-end;
+    }
   }
+ }
+

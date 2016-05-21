@@ -5,7 +5,7 @@
 }
 .app-header {
   padding: 10px;
-  //color: $primary-color-text;
+  color: $primary-color-text;
   background-color: $primary-color;
   height: 80px;
   border-bottom: 2px solid #fff59d;
@@ -15,7 +15,7 @@
   justify-content: space-between;
   a {
      font-size: 11px;
-     color: $primary-color-text;
+     color: rgba(0,0,0,0.5);
    }
    .button {
      background: rgba(0, 0, 0, 0.1);
@@ -46,6 +46,9 @@
     &:first-child {
       border-left: 0;
     }
+    &:hover {
+        background-color: rgba(0,0,0,0.08);
+      }
   }
   i {
     display: block ;
@@ -62,6 +65,24 @@
   width: 300px;
   //height: 100vh; 由于.app-wrap是flex continer,.app-sidebar就是flex item，高度自动为百分百，此行可删除。
   background-color: $primary-color;
+  .name {
+      text-align: center;     
+      border-bottom:2px solid #fff59d;
+      color: $primary-color-text;
+    }
+    a {
+      display: block;
+      padding:20px;
+      font-size: 18px;
+      color: $primary-text-color;
+      i {
+        color: white;
+        margin-right: 6px;
+      }
+      &:hover {
+        background-color: rgba(0,0,0,0.08);
+      }
+    }
 }
 
 @media (min-width: 700px) {
@@ -73,5 +94,5 @@
   }
   .sidebar {
     display: block;
-  }
+    }   
 }

@@ -21,6 +21,7 @@ a {
 
 .app-header {
   padding: 10px;
+  color: #FFFFFF;
   background-color: #009688;
   height: 80px;
   border-bottom: 2px solid #fff59d;
@@ -37,7 +38,7 @@ a {
           justify-content: space-between; }
   .app-header a {
     font-size: 11px;
-    color: mistyrose; }
+    color: rgba(0, 0, 0, 0.5); }
   .app-header .button {
     background: rgba(0, 0, 0, 0.1);
     padding: 10px 15px;
@@ -71,6 +72,8 @@ a {
             flex-grow: 1; }
     .app-footer a:first-child {
       border-left: 0; }
+    .app-footer a:hover {
+      background-color: rgba(0, 0, 0, 0.08); }
   .app-footer i {
     display: block;
     font-size: 25px;
@@ -84,6 +87,20 @@ a {
       flex-shrink: 0;
   width: 300px;
   background-color: #009688; }
+  .sidebar .name {
+    text-align: center;
+    border-bottom: 2px solid #fff59d;
+    color: #FFFFFF; }
+  .sidebar a {
+    display: block;
+    padding: 20px;
+    font-size: 18px;
+    color: #212121; }
+    .sidebar a i {
+      color: white;
+      margin-right: 6px; }
+    .sidebar a:hover {
+      background-color: rgba(0, 0, 0, 0.08); }
 
 @media (min-width: 700px) {
   .app-wrap {
@@ -193,7 +210,12 @@ a {
     border-radius: 50%;
     border: 2px solid white; }
   .about h2 {
-    color: #00796B; }
+    margin-left: 5%;
+    padding-left: 5%;
+    color: #009688;
+    border-left: 10px solid #00796B; }
+  .about .who {
+    margin-left: 5%; }
   .about .touch {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -207,3 +229,25 @@ a {
       font-size: 36px;
       color: #FF9800;
       margin: 0 10px 0 0; }
+
+@media (min-width: 800px) {
+  .about {
+    text-align: center;
+    font-size: 17px; }
+    .about .who {
+      margin-left: 0; }
+    .about h2 {
+      margin: 20px auto;
+      padding: 0;
+      width: 200px;
+      border-left: none;
+      border-bottom: 3px solid #00796B; }
+    .about .touch {
+      margin-top: 30px;
+      width: 200px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
