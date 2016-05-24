@@ -107,6 +107,13 @@ a {
     background-color: rgba(0, 0, 0, 0.24);
     color: #FFFFFF; }
 
+.night {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  outline: 5000px solid rgba(0, 0, 0, 0.3);
+  z-index: 99999; }
+
 @media (min-width: 700px) {
   .app-wrap {
     -webkit-box-orient: horizontal;

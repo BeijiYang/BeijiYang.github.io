@@ -24,11 +24,10 @@ function goBack(){
 };
 
 //function nightMode(){
-  //$("#nightNode").addClass("night");//自动刷新
+  //$("#nightmode").addClass("night");//自动刷新
   //$("#nightmode").css("color","red")//依然自动刷新
   //return false;
 //};
-$("#switch").click(function(){   //保持效果
-  $("#nightMode").toggleClass("night");
-  return false;
+$("#nightmode").each(function(){
+  $(this).addClass("night");
 });
